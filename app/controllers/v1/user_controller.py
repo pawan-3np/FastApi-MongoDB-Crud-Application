@@ -18,7 +18,7 @@ class UserController:
     @user_router.post("/register")
     async def register(self, payload: Register) -> APIResponse:
         try:
-            response = self.user_manager.register(payload)
+            response = await self.user_manager.register(payload)
 
             if "message" in response:
                 return JSONResponse(

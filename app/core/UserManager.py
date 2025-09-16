@@ -5,8 +5,9 @@ class UserManager():
         self.user_database = AuthenticationData()
 
     async def register(self, payload: Register):
-        where_clouse = {"email": payload}
-        email_already_exist = self.user_database.get_by_where_clouse(where_clouse)
+        where_clause = {"email": payload}
+        email_already_exist = self.user_database.get_by_where_clause(where_clause)
+
         if email_already_exist:
             return {'success':False, "message":f"email already exist"}
         
