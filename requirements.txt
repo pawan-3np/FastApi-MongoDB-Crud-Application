@@ -1,0 +1,13 @@
+fastapi
+fastapi-camelcase
+fastapi-pagination
+fastapi-utils
+motor
+pydantic
+pydantic[email]
+pymongo
+requests
+requests-async==0.2.4
+sqlAlchemy
+python-decouple
+uvicorn
