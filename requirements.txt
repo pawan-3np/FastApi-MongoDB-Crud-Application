@@ -11,3 +11,5 @@ requests-async==0.2.4
 sqlAlchemy
 python-decouple
 uvicorn
+typing-inspect
+httpx
